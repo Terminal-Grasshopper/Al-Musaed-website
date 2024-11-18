@@ -1,96 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Al Musaed - local AI Support Assistant</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Al Musaed: Revolutionizing Public Interaction with AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./assets/chat-bot.png" >
+  <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- Top Bar Section -->
+  <div id="top-bar" class="top-bar backdrop-blur-md p-4 bg-black bg-opacity-0 flex">
+    <div class="logo-text">
+      <img src="./assets/Al-musaedlogo.png" alt="Al Musaed Logo" class="mr-2" />
+    </div>
+    <div class="logo-container">
+      <img src="./assets/logo_fujairah.png" alt="Fujairah Logo" class="mr-2" />
+    </div>
+  </div>
+
+      <section id="hero" class="hero-section">
+        <video autoplay muted loop id="background-video">
+          <source src="./assets/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      
         <div class="container">
-            <h1>Al Musaed</h1>
-            <p>Your AI-Powered Support Assistant for all enterprise requirements</p> <br>
-            <p>In Collaboration with Fujairah Municipality</p>
+          <h1 class="hero-title">Al Musaed: Talk to the Future</h1>
+          <p class="hero-subtitle">Bringing the power of AI to Fujairah's municipal services.</p>
         </div>
-    </header>
+      </section>
 
-    <nav>
-        <ul>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#importance">Importance</a></li>
-            <li><a href="#features">Key Features</a></li>
-            <li><a href="#issues">Issues Addressed</a></li>
-            <li><a href="#team">Our Team</a></li>
-        </ul>
-    </nav>
-
+  <!-- Project Overview -->
     <section id="overview">
         <div class="container">
-            <h2>Overview of AI in IT Support</h2>
-            <p>Artificial intelligence has transformed various industries by automating tasks, boosting efficiency, and enhancing user experiences. In IT support, AI plays a critical role by providing functionalities such as automated ticketing, predictive maintenance, and intelligent virtual assistants, reducing downtime and improving service management.</p>
+            <h2 class="fade-in-title">What is Al Musaed?</h2>
+            <p class="fade-in-content">Al Musaed is a cutting-edge 100% local AI-powered solution developed by the UOWD Student Team, designed to enhance engagement and streamline services across any department. It works seamlessly as a text-based chatbot, voice assistant, or a 3D avatar, providing flexible interaction modes for diverse use cases.</p>
         </div>
     </section>
 
-    <section id="importance">
-        <div class="container">
-            <h2>Importance of Local Solutions for Municipalities</h2>
-            <p>Local AI solutions cater to specific needs, including regional workflows, regulatory requirements, and language preferences. Implementing AI locally ensures better user adoption and enhanced data security, which is crucial for handling confidential government information.</p>
-        </div>
-    </section>
+  <!-- Key Features Section -->
+  <section class="key-features-section">
+    <h2>What are the Features of Al Musaed?</h2>
+    <div class="feature-container">
+      
+      <!-- Data Security & Privacy -->
+<div class="feature">
+    <h3>Data Security & Privacy</h3>
+    <p>Unlike most AI tools that rely on cloud servers and API, Al Musaed runs 100% locally within Fujairah Municipality's secure systems. This ensures that all data stays under local control, providing enhanced privacy and security</p>
+  </div>
+  
+  <!-- Interactive 3D Avatar -->
+  <div class="feature">
+    <h3>Interactive 3D Avatar</h3>
+    <p>Al Musaed’s next-generation 3D avatar brings a human touch to digital interaction, responding in real-time with realistic gestures, facial expressions, and voice communication. Whether it's in a public space, corporate setting, or customer service environment, the avatar creates an engaging, immersive experience for users.</p>
+  </div>
+  
+  <!-- Multilingual Capabilities -->
+  <div class="feature">
+    <h3>Multilingual Capabilities</h3>
+    <p>Designed to bridge language gaps, Al Musaed is equipped with multilingual support, including Arabic, English, Hindi, German and many more. This ensures smooth communication with diverse audiences, making it accessible for people from different linguistic backgrounds.</p>
+  </div>
+  
+  <!-- Accurate Information Delivery -->
+  <div class="feature">
+    <h3>Accurate Information Delivery</h3>
+    <p>With Retrieval-Augmented Generation (RAG) technology at its core, Al Musaed guarantees precise and reliable information. While typical chatbots rely on data searches, Al Musaed uses semantic search, to understand the meaning behind user queries. This ensures accurate and reliable responses.</p>
+  </div>
+</div>
 
-    <section id="features">
-        <div class="container">
-            <h2>Key Features of Al Musaed</h2>
-            <ul>
-                <li><strong>Bilingual Support:</strong> Seamless communication in Arabic, English, Urdu, and Hindi.</li>
-                <li><strong>Secure Local Operation:</strong> 100% secure database with local server operation.</li>
-                <li><strong>User-Centric Design:</strong> Easy-to-use interface targeting non-technical users.</li>
-                <li><strong>Dynamic Learning:</strong> Continuous improvement through Retrieval-Augmented Generation (RAG).</li>
-                <li><strong>Automated Redirection:</strong> Redirects unresolved issues to IT support staff.</li>
-            </ul>
-        </div>
-    </section>
+    <!-- Customizable Persona placed outside the grid -->
+<div class="customizable-persona-container">
+    <div class="feature">
+      <h3>Customizable Persona</h3>
+      <p>Al Musaed offers a highly flexible 3D avatar that can be tailored to meet the specific needs of various industries. Customize the avatar’s appearance, voice, and language to align with your organization’s identity, whether it’s for customer service, education, or tourism purposes.</p>
+    </div>
+  </div>
+  
+  </section>
+  
 
-    <section id="issues">
-        <div class="container">
-            <h2>Issues Addressed by Al Musaed</h2>
-            <div class="issue">
-                <h3>Prolonged Response Times</h3>
-                <p>Problem: Employees face delays in resolving IT issues, leading to frustration and reduced productivity.</p>
+  <section class="use-cases-section">
+    <h2>Where Can Al Musaed Be Used?</h2>
+    <p class="intro-text">Al Musaed is a versatile tool that can be applied anywhere:</p>
+    
+    <div class="use-case-cards">
+        <div class="use-case-card">
+            <div class="icon"><img src="./assets/digital-government.png" alt="Government Services Icon" /></div>
+            <h3>Government Services</h3>
+            <p>Streamlined, accurate information for public queries at municipalities.</p>
+          </div>
+          
+          <div class="use-case-card">
+            <div class="icon"><img src="./assets/tourism-icon.png" alt="Tourism Icon" /></div>
+            <h3>Tourist Attractions</h3>
+            <p>Multilingual virtual guides offering personalized experiences.</p>
+          </div>
+          
+          <div class="use-case-card">
+            <div class="icon"><img src="./assets/corporation.png" alt="Corporate Offices Icon" /></div>
+            <h3>Corporate Offices</h3>
+            <p>Enhancing customer service with human-like interaction.</p>
+          </div>
+          
+          <div class="use-case-card">
+            <div class="icon"><img src="./assets/hr-icon.png" alt="HR Icon" /></div>
+            <h3>Human Resources</h3>
+            <p>Efficient internal communication through multilingual, secure chatbot.</p>
+          </div>
+    </div>
+    <div class="use-case-text">
+        <h3>Any Industry, Any Department</h3>
+        <p>Our solution works for any industry and any department, offering versatile support for all your needs.</p>
+      </div>
+  </section>
+
+
+  <section id="demo" class="demo-section">
+    <div class="container demo-container">
+        <div class="demo-info">
+            <h2>Ultimate AI Platform</h2>
+            <p>Explore how Al Musaed works in real scenarios as a chatbot, voice bot, and interactive 3D avatar.</p>
+        </div>
+        <div class="demo-slideshow">
+            <div class="slideshow-container">
+                <!-- Video 1 -->
+                <div class="mySlides fade">
+                    <video controls class="demo-video">
+                        <source src="./assets/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="caption">3D Avatar Interaction</div>
+                </div>
             </div>
-            <div class="issue">
-                <h3>Manual Handling of IT Queries</h3>
-                <p>Problem: Heavy reliance on manual processes restricts scalability and increases the risk of human errors.</p>
-            </div>
-            <div class="issue">
-                <h3>Limited Access to IT Support Resources</h3>
-                <p>Problem: Employees lack self-help tools, leading to increased dependence on IT staff for minor issues.</p>
-            </div>
-            <div class="issue">
-                <h3>Decreased Productivity</h3>
-                <p>Problem: Inefficient IT support negatively impacts employee productivity and operational efficiency.</p>
-            </div>
+                <!-- Image 1 -->
+                <div class="mySlides fade">
+                    <img src="./assets/chat-demo.png" alt="Chatbot in action" class="demo-image">
+                    <div class="caption">Chatbot Interface</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="./assets/chat-demo1.png" alt="Chatbot in action" class="demo-image">
+                    <div class="caption">Chatbot Interface</div>
+                </div>
+                <!-- Image 2 -->
+                <div class="mySlides fade">
+                    <img src="./assets/demo-image2.jpg" alt="Voice bot in action" class="demo-image">
+                    <div class="caption">Voice Bot Demonstration</div>
+                </div>
+            
+            <!-- Slideshow controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="team">
-        <div class="container">
-            <h2>Our Team - Team iNOVATOR</h2>
-            <ul>
-                <li>Taha Shabbir 7714075</li>
-                <li>Mohamad Dahhan: 7071875</li>
-                <li>Saim Shaikh 7778739</li>
-                <li>Syed Osaid Gilani 7892883</li>
-                <li>Mir Ali Akbar Abedi 7762859</li>
-            </ul>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2024 Al Musaed. All Rights Reserved.</p>
+<section id="powered-by-students" class="powered-by-students-section">
+    <div class="container">
+      <!-- Headline -->
+      <h2 class="powered-title">Powered by Students</h2>
+  
+      <!-- Group Image after the headline -->
+      <div class="group-image">
+        <img src="./assets/group-pic.jpg" alt="Group of students working on project">
+      </div>
+  
+      <!-- Text content -->
+      <div class="powered-text">
+        <p>We are a passionate team of students from the University of Wollongong in Dubai, proud to have developed this innovative AI-powered solution in collaboration with Fujairah Municipality. Throughout the summer, we worked tirelessly to bring our vision to life, overcoming challenges with limited resources but boundless determination. Our goal was to create something that not only meets the needs of today but also showcases the power of student-driven innovation and technical expertise.</p>
+        <p>Despite balancing our studies and part-time commitments, we succeeded in developing a cutting-edge AI system that combines a highly interactive 3D avatar with advanced chatbot capabilities. This project is a testament to what can be achieved through collaboration, creativity, and a passion for pushing the boundaries of technology.</p>
+        <p>With more time and resources, we believe we can take this project to even greater heights, refining it into a truly polished and versatile solution that can adapt to any use case. Whether it's public venues, customer support, or any other domain, this AI solution has the potential to be something truly special.</p>
+      </div>
+  
+      <!-- UOWD Image placed at the bottom -->
+      <div class="powered-image">
+        <img src="./assets/uowd.webp" alt="UOWD logo">
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+
+  <!-- Team Behind the Innovation -->
+  <section class="team-section">
+    <h2>Our Team</h2>
+    <div class="team-container">
+
+      <!-- Team Member Taha -->
+      <div class="team-member">
+        <img src="./assets/taha.jpg" alt="Taha">
+        <h3>Taha Shabbir Hussain</h3>
+        <a href="https://www.linkedin.com/in/taha-hussain-a67437219/" target="_blank" class="linkedin-icon">
+          <img src="./assets/linkedin-icon.png" alt="LinkedIn Icon">
+        </a>
+      </div>
+
+      <!-- Team Member Ali -->
+      <div class="team-member">
+        <img src="./assets/ali.jpg" alt="Ali">
+        <h3>Ali Akbar Abedi</h3>
+        <a href="https://www.linkedin.com/in/ali-akbar-abedi-083784253/" target="_blank" class="linkedin-icon">
+          <img src="./assets/linkedin-icon.png" alt="LinkedIn Icon">
+        </a>
+      </div>
+      
+      <!-- Team Member Osaid -->
+      <div class="team-member">
+        <img src="./assets/osaid.jpg" alt="Osaid">
+        <h3>Syed Osaid Gilani</h3>
+        <a href="https://www.linkedin.com/in/syed-gilani-8456ba2ab/" target="_blank" class="linkedin-icon">
+          <img src="./assets/linkedin-icon.png" alt="LinkedIn Icon">
+        </a>
+      </div>
+
+      <!-- Team Member Saim -->
+      <div class="team-member">
+        <img src="./assets/saim.jpg" alt="Saim">
+        <h3>Saim Shaikh</h3>
+        <a href="https://www.linkedin.com/in/saim-shaikh-b25031272/" target="_blank" class="linkedin-icon">
+          <img src="./assets/linkedin-icon.png" alt="LinkedIn Icon">
+        </a>
+      </div>
+
+      <div class="team-member">
+        <img src="./assets/fatema.jpg" alt="fatema">
+        <h3>Fatema Bohra</h3>
+        <a href="https://www.linkedin.com/in/fatema-bohra-8a22ab296/" target="_blank" class="linkedin-icon">
+          <img src="./assets/linkedin-icon.png" alt="LinkedIn Icon">
+        </a>
+      </div>
+      
+      <div class="team-member">
+        <img src="./assets/tia.jpg" alt="tia">
+        <h3>Tia Rebello</h3>
+        <a href="https://www.linkedin.com/in/tia-rebello-21a8b9288/" target="_blank" class="linkedin-icon">
+          <img src="./assets/linkedin-icon.png" alt="LinkedIn Icon">
+        </a>
+      </div>
+
+    </div>
+</section>
+
+<section class="advisor-section">
+    <h2>Our Advisors</h2>
+    <div class="advisor-container">
+      <div class="advisor-member">
+        <img src="./assets/abdullateef.jpg" alt="Advisor Image">
+        <h3>Abdul Latif Yusufzai</h3>
+        <p class="role">Head Smart Services Division at Fujairah Municipality</p>
+        <div class="linkedin-icon">
+          <a href="https://www.linkedin.com/in/lateefyusufzai/" target="_blank"><img src="./assets/linkedin-icon.png" alt="LinkedIn"></a>
         </div>
-    </footer>
+      </div>
+      <div class="advisor-member">
+        <img src="./assets/george.jpg" alt="Advisor Image">
+        <h3>George Tsaramirsis </h3>
+        <p class="role">Associate Professor at UOWD</p>
+        <div class="linkedin-icon">
+          <a href="https://www.linkedin.com/in/george-tsaramirsis-21645519/" target="_blank"><img src="./assets/linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+  
+
+
+  <section id="contact">
+    <div class="contact container">
+      <h2>Get In Touch</h2>
+      <p>Have questions or need more information? Reach out to us, and we'll get back to you shortly.</p>
+      <p>Email: <a href="mailto:almusaedai@gmail.com">almusaedai@gmail.com</a></p>
+      <p>Phone:+971 56 468 5613</p>
+      <div class="contact-info">
+        <a href="mailto:almusaedai@gmail.com" class="btn">Contact Us</a>
+      </div>
+    </div>
+  </section>
+  
+
 </body>
 </html>
